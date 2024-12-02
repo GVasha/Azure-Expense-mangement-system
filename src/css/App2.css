@@ -1,0 +1,74 @@
+/* Center the entire app */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the central "paper" container */
+.paper-container {
+    width: 100%;
+    max-width: 600px; /* Set a fixed maximum width for the "paper" */
+    background: white; /* Paper-like background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center-align text within the container */
+}
+
+/* General styling for forms and lists */
+form {
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the expense list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
