@@ -163,7 +163,7 @@ const ExpenseList = () => {
                     onChange={(e) =>
                       setEditedExpense({ ...editedExpense, Category: e.target.value })
                     }
-                  />
+                  /><br></br>
                 </label>
                 <label>
                   <strong>Amount:</strong>
@@ -174,7 +174,7 @@ const ExpenseList = () => {
                       setEditedExpense({ ...editedExpense, Amount: parseFloat(e.target.value) })
                     }
                   />
-                </label>
+                </label><br></br>
                 <label>
                   <strong>Date:</strong>
                   <input
@@ -184,7 +184,7 @@ const ExpenseList = () => {
                       setEditedExpense({ ...editedExpense, Date: e.target.value })
                     }
                   />
-                </label>
+                </label><br></br>
                 <label>
                   <strong>Description:</strong>
                   <input
@@ -194,9 +194,9 @@ const ExpenseList = () => {
                       setEditedExpense({ ...editedExpense, Description: e.target.value })
                     }
                   />
-                </label>
+                </label><br></br>
                 <label>
-                  <strong>Upload Receipt (PNG or PDF):</strong>
+                  <strong>Upload Receipt:</strong>
                   <input
                     type="file"
                     accept=".png,.pdf"
@@ -217,9 +217,9 @@ const ExpenseList = () => {
                       }
                     }}
                   />
-                </label>
+                </label><br></br>
                 <label>
-                  <strong>Link (optional):</strong>
+                  <strong>Link:</strong>
                   <input
                     type="text"
                     value={editedExpense.DownloadReceipt || ''}
